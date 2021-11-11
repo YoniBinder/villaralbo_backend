@@ -5,7 +5,7 @@ exports.getNextMatch= function (req, res) {
       if (err) {
         return res.send(err);
       }
-    //   res.setHeader("Content-Range", `${result.length}`);
+      res.setHeader("Content-Range", `${result.length}`);
       res.json(result);
     });
   };
